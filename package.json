@@ -1,0 +1,23 @@
+{
+	"name": "pipeops-hackathon",
+	"description": "A very good api tool",
+	"scripts": {
+		"dev": "pnpm turbo dev",
+		"build": "pnpm turbo build"
+	},
+	"dependencies": {
+		"cross-env": "^7.0.3",
+		"minimist": "^1.2.8",
+		"dotenv-cli": "^7.4.1"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.5",
+		"@typescript-eslint/eslint-plugin": "^7.2.0",
+		"@typescript-eslint/parser": "^7.2.0",
+		"eslint": "^8.57.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.6",
+		"turbo": "^1.12.4",
+		"typescript": "^5.0.2"
+	}
+}

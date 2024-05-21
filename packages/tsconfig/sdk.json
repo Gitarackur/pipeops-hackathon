@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Default",
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"target": "ES2016",
+		"module": "CommonJS",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"strict": true,
+		"noEmit": true,
+		"noUncheckedIndexedAccess": true,
+		"moduleResolution": "Node"
+	}
+}

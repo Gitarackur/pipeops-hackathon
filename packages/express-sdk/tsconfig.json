@@ -1,0 +1,10 @@
+{
+	// We extend it from here!
+	"extends": "tsconfig/sdk.json",
+	// You can specify your own include/exclude
+	"include": ["./"],
+	"exclude": ["node_modules"],
+	"compilerOptions": {
+		"outDir": "./dist"
+	}
+}
