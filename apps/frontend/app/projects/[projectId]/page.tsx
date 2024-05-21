@@ -1,16 +1,7 @@
 "use client";
 
- 
-import { methodColor } from "@/lib/utils";
 import { KeyRoundIcon, Link as LinkIcon } from "lucide-react";
 import Link from "next/link";
-
- 
- 
- 
-
-
- 
 
 interface Props {
 	params: { [index: string]: string };
@@ -42,24 +33,17 @@ interface Results {
 }
 
 const ProjectRequests = (props: Props) => {
- 
-
-	 
-	 
-
-	 
-
 	return (
 		<>
 			<section className="mt-[3rem] mb-[2rem] flex flex-col gap-2">
 				<p className="font-poppins font-medium text-[18px]">Dashboard</p>
 				<div className="flex h-5 items-center space-x-4 text-sm">
 					<div>192020839392</div>
-					<Separator orientation="vertical" />
+					{/* <Separator orientation="vertical" /> */}
 					<div>https://demo.treblle.com/api/v1/</div>
 				</div>
 			</section>
- 
+
 			{/* <div className="h-16"></div> */}
 		</>
 	);
@@ -76,8 +60,5 @@ interface RequestCardProp {
 
 	createdAt: string;
 }
-
- 
- 
 
 export default ProjectRequests;

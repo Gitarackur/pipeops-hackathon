@@ -1,15 +1,7 @@
 "use client";
 
- 
-import {
-	convertObjectToTypes,
-	isValidJsonString,
-	methodColor,
-	statusColor,
-} from "@/lib/utils";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
- 
 
 let data = {
 	_creationTime: 1710186391462.2485,
@@ -61,19 +53,14 @@ interface Props {
 	searchParams: { [index: string]: string };
 }
 
- 
-
 const RequestById = (props: Props) => {
-	 
-	 
-
 	return (
 		<div>
 			<section className="mt-[3rem] mb-[2rem] flex flex-col gap-2">
 				<p className="font-poppins font-medium text-[18px]">Request</p>
 				<div className="flex h-5 items-center space-x-4 text-sm">
 					<div>192020839392</div>
-					<Separator orientation="vertical" />
+					{/* <Separator orientation="vertical" /> */}
 					<div>https://demo.treblle.com/api/v1/</div>
 				</div>
 			</section>
@@ -94,8 +81,6 @@ const RequestById = (props: Props) => {
 	);
 };
 
- 
-
 const RequestMetaCard = ({ request, createdAt }: any) => {
 	let { body, headers } = request;
 
@@ -109,8 +94,6 @@ const RequestMetaCard = ({ request, createdAt }: any) => {
 					<span>{createdAt}</span>
 				</div>
 			</div>
-
-			 
 		</div>
 	);
 };
@@ -128,8 +111,6 @@ const RequestLogCard = ({ request, createdAt }: any) => {
 					<span>{createdAt}</span>
 				</div>
 			</div>
-
-		 
 		</div>
 	);
 };
@@ -147,8 +128,6 @@ const ResponseLogCard = ({ response, createdAt }: any) => {
 					<span>{createdAt}</span>
 				</div>
 			</div>
- 
-		 
 		</div>
 	);
 };

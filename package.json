@@ -3,7 +3,7 @@
 	"description": "A very good api tool",
 	"scripts": {
 		"dev": "pnpm turbo dev",
-		"build": "pnpm turbo build"
+		"build": "pnpm turbo run build"
 	},
 	"dependencies": {
 		"cross-env": "^7.0.3",
