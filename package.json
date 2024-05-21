@@ -3,7 +3,7 @@
 	"description": "A very good api tool",
 	"scripts": {
 		"dev": "turbo dev",
-		"build": "turbo run build",
+		"build": "turbo run build --filter backend",
 		"pnpm:dev": "pnpm turbo dev",
 		"pnpm:build": "pnpm turbo run build"
 	},
