@@ -2,8 +2,10 @@
 	"name": "pipeops-hackathon",
 	"description": "A very good api tool",
 	"scripts": {
-		"dev": "pnpm turbo dev",
-		"build": "pnpm turbo run build"
+		"dev": "turbo dev",
+		"build": "turbo run build",
+		"pnpm:dev": "pnpm turbo dev",
+		"pnpm:build": "pnpm turbo run build"
 	},
 	"dependencies": {
 		"cross-env": "^7.0.3",
