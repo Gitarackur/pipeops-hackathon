@@ -5,8 +5,8 @@
 		"dev": "turbo run dev",
 		"build": "turbo run build",
 		"pre:build": "npm install -g turbo",
-		"backend:build": "turbo run build --filter backend",
-		"start": "turbo run start --filter backend"
+		"next:build": "turbo run build --filter frontend",
+		"start": "turbo run start --filter frontend"
 	},
 	"dependencies": {
 		"cross-env": "^7.0.3",
