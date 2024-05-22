@@ -6,7 +6,9 @@
 		"build": "turbo run build",
 		"pre:build": "npm install -g turbo",
 		"next:build": "turbo run build --filter frontend",
-		"start": "turbo run start --filter frontend"
+		"start": "turbo run start --filter frontend",
+		"npm:build": "turbo run build --workspace=frontend",
+		"npm:start": "turbo run start --workspace=frontend"
 	},
 	"dependencies": {
 		"cross-env": "^7.0.3",
@@ -23,5 +25,9 @@
 		"turbo": "^1.12.4",
 		"typescript": "^5.0.2"
 	},
-	"packageManager": "pnpm@latest"
+	"packageManager": "pnpm@latest",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	]
 }
