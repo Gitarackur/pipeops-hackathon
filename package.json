@@ -1,14 +1,13 @@
 {
-	"name": "pipeops-hackathon",
-	"description": "A very good api tool",
+	"name": "@monorepo",
+	"description": "Pipeops hackathon",
 	"scripts": {
 		"dev": "turbo run dev",
 		"build": "turbo run build",
-		"pre:build": "npm install -g turbo",
-		"next:build": "turbo run build --filter frontend",
-		"start": "turbo run start --filter frontend",
-		"npm:build": "turbo run build --workspace=frontend",
-		"npm:start": "turbo run start --workspace=frontend"
+		"build:frontend": "turbo run dev --filter=frontend",
+		"start:frontend": "turbo run start --filter=frontend",
+		"build:backend": "turbo run build --filter=backend",
+		"start:backend": "turbo run start --filter=backend"
 	},
 	"dependencies": {
 		"cross-env": "^7.0.3",
@@ -25,7 +24,6 @@
 		"turbo": "^1.12.4",
 		"typescript": "^5.0.2"
 	},
-	"packageManager": "pnpm@latest",
 	"workspaces": [
 		"apps/*",
 		"packages/*"
